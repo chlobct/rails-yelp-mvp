@@ -1,0 +1,9 @@
+<h1>🍽 RESTAURANT LIST 🍽</h1>
+
+<% @restaurants.each do |restaurant| %>
+  <h2><%= restaurant.name %></h2>
+  <p><%= restaurant.address %></p>
+<% end %>
+
+
+  <%= render 'form', restaurant: @restaurant %>

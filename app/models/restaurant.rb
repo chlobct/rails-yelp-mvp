@@ -9,10 +9,3 @@ class Restaurant < ApplicationRecord
   validates :category, inclusion: { in: CATEGORIES,
   message: "%{value} is not a valid category" }
 end
-
-
-# A restaurant must have at least a name and an address.
-# The restaurant category should belong to a fixed list
-# ["chinese", "italian", "japanese", "french", "belgian"].
-# When a restaurant is destroyed, all of its reviews should be destroyed as well.
-# Validate all model tests before moving to the routing layer. You can use this command:
