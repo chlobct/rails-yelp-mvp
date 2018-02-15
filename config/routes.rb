@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'pages/home'
+
   get    "restaurants",          to: "restaurants#index"
 
   get    "restaurants/new",      to: "restaurants#new"
